@@ -1,6 +1,7 @@
 package com.example.techtrain.railway.android
 
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
@@ -10,5 +11,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         findViewById<TextView>(R.id.text).text = getString(R.string.text)
+        val imageView = findViewById<ImageView>(R.id.imageView)
+        imageView.setImageResource(R.drawable.ic_launcher_foreground)
     }
 }

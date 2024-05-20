@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Railway</string>
     <string name="text">Hello</string>
+    <string name="todo">TODO</string>
 </resources>
