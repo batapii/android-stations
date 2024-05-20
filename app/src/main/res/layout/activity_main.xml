@@ -19,6 +19,7 @@
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:background="#000000"
             android:contentDescription="@string/todo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -26,7 +27,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text"
             app:layout_constraintVertical_bias="0.513"
-            app:tint="#000000"
             tools:srcCompat="@tools:sample/avatars" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
