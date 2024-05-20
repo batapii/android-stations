@@ -20,7 +20,7 @@
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:contentDescription="@string/todo"
-            android:src="#000000"
+            android:src="@drawable/dall_e_may_20_serene_japanese_garden_200px"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
