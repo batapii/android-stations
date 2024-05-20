@@ -11,7 +11,5 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         findViewById<TextView>(R.id.text).text = getString(R.string.text)
-        val imageView = findViewById<ImageView>(R.id.imageView)
-        imageView.setImageResource(R.drawable.ic_launcher_foreground)
     }
 }
