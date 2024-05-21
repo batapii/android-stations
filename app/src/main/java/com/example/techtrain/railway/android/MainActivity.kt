@@ -1,22 +1,20 @@
 package com.example.techtrain.railway.android
 
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.techtrain.railway.android.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        val text = findViewById<TextView>(R.id.text)
-        val button = findViewById<Button>(R.id.button)
-        val EditText = findViewById<EditText>(R.id.editTextText)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        button.setOnClickListener {
-            text.text = EditText.text
+
+
+        binding.button.setOnClickListener {
+            binding.text.text = binding.editTextText.text.toString()
         }
     }
 }

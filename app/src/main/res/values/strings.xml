@@ -2,4 +2,7 @@
     <string name="app_name">Railway</string>
     <string name="text">Hello</string>
     <string name="todo">TODO</string>
+    <string name="welcome">Welcome</string>
+    <string name="EditText">テキストを入れてね</string>
+    <string name="submit">Submit</string>
 </resources>
