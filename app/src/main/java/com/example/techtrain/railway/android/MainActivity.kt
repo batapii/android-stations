@@ -1,5 +1,6 @@
 package com.example.techtrain.railway.android
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.techtrain.railway.android.databinding.ActivityMainBinding
@@ -14,7 +15,8 @@ class MainActivity : AppCompatActivity() {
 
 
         binding.button.setOnClickListener {
-            binding.text.text = binding.editTextText.text.toString()
+            val intent = Intent(this, MainActivity2::class.java)
+            startActivity(intent)
         }
     }
 }
