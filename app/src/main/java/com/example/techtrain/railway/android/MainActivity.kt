@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        Log.d(TAG, "onCreate()")
+        Log.d("MainActivity", "onCreate()")
         binding.button.setOnClickListener {
             val intent = Intent(this, MainActivity2::class.java).apply {
                 putExtra("KEY_INPUT_TEXT", binding.editTextText.text.toString())
@@ -27,22 +27,31 @@ class MainActivity : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
-        Log.d(TAG, "MainActivity")
+        Log.d("MainActivity", "onStart()")
     }
-    override fun onStop() {
-        super.onStop()
-        Log.d(TAG, "MainActivity")
-    }
-    override fun onDestroy() {
-        super.onDestroy()
-        Log.d(TAG, "MainActivity")
-    }
-    override fun onPause() {
-        super.onPause()
-        Log.d(TAG, "MainActivity")
-    }
+
     override fun onResume() {
         super.onResume()
-        Log.d(TAG, "MainActivity")
+        Log.d("MainActivity", "onResume()")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d("MainActivity", "onPause()")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d("MainActivity", "onStop()")
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        Log.d("MainActivity", "onRestart()")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d("MainActivity", "onDestroy()")
     }
 }
