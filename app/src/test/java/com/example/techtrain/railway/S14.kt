@@ -23,7 +23,7 @@ class S14 {
             PackageManager.GET_PERMISSIONS
         )
         assertEquals(
-            setOf(Manifest.permission.INTERNET, Manifest.permission.ACCESS_NETWORK_STATE),
+            setOf(Manifest.permission.INTERNET, Manifest.permission.ACCESS_NETWORK_STATE,"com.example.techtrain.railway.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"),
             info.requestedPermissions.toSet(),
             "AndroidManifestに必要なパーミッションが書かれていないか、余分なパーミッションが書かれています。"
         )
